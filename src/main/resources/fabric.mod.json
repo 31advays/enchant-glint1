@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "enchantglint",
+  "version": "${version}",
+  "name": "Enchant Glint",
+  "description": "Client-side custom enchantment glint: 15 presets, custom colours, strength/opacity/scale/speed, item selection.",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/enchantglint/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.enchantglint.client.EnchantGlintClient"]
+  },
+  "mixins": ["enchantglint.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3.*",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
