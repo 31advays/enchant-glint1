@@ -98,7 +98,6 @@ public final class GlintScreen extends Screen {
         hexBox.setBordered(false);
         hexBox.setMaxLength(7);
         hexBox.setTextColor(TEXT);
-        hexBox.setFilter(t -> t.matches("#?[0-9a-fA-F]{0,6}"));
         hexBox.setResponder(this::onHexChanged);
         hexBox.setValue(ColorUtil.toHex(current()));
         addWidget(hexBox);
